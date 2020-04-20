@@ -1,0 +1,280 @@
+<!Doctype html>
+<head>
+    <title>Scan & Grab</title>
+    
+    <!--<link rel="stylesheet" href="Css/desktop.css" /> -->
+    <link rel="stylesheet" href="Css/mystyle.css" />
+    <link rel="stylesheet" href="Css/common.css" />
+    <link rel="stylesheet"  type="text/css" href="font/css/font-awesome.min.css" />
+    <script src="js/myscript.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <a onclick="toggle()" id="threebar">
+            <i class="fa fa-bars"></i> 
+        </a>
+        <a href="index.html" class="logo" id="logo">Scan<span>&</span>Grab</a>
+        <ul id="menulist">
+            <li><a href="business.html">For Business</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a onclick="openContact()">Support</a></li> 
+        </ul>
+    </div>
+
+    <div id="supportContainer">
+        <a onclick="closeContact()">X</a>
+        <div class="contactModal">
+            <h2>We love to help you</h2>
+            <div class="contactIcons">
+                <a href="#"><i class="fa fa-headphones"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+            </div>
+            <div class="contactInfo">
+                <p>(408) 372-6463</p>
+                <p>info@scan.com</p>    
+            </div>   
+        </div>
+    </div>
+    <div class="locationContainer" id="start">
+            <img src="img/shopmap.png" alt="mainmap" id="map"> 
+            <div class="sitepath">
+                <a href="index.html">Home</a>
+                <span> / </span> 
+                <a href="location.html">Location</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Seach malls" id="searchmall" oninput="suggestmall()" />
+                
+                <div>
+                    <a class="Gray"><i class="fa fa-search"></i></a> 
+                    <a onclick="closeMallList()" class="Gray closeSearch">&nbsp;| <i class="fa fa-times"></i></a>
+                </div>
+            </div>
+            <ul class="autocomplete" id="suggestList">
+                <li><a onclick="showMallDetail('Big Bazar, Bharuch','bigbazarbharuch','mallpopup')">Big Bazar, Bharuch</a></li>
+                <li><a onclick="showMallDetail('D Mart, Ankleshwar','dmartAnk','mallpopup')">D Mart, Ankleshwar</a></li>
+                <li><a onclick="showMallDetail('Golden Square,Ankleshwar','goldenSqaureAnk','mallpopup')">Golden Square,Ankleshwar</a></li>
+                <li><a onclick="showMallDetail('Hind Shopping Center, Bharuch','hindShopBharuch','mallpopup')">Hind Shopping Center, Bharuch</a></li> 
+                <li><a onclick="showMallDetail('Silver Plaza Shopping, Ankleshwar','silverPlazaAnk','mallpopup')">Silver Plaza Shopping, Ankleshwar</a></li>
+                <p class="noresult"> No Result Found </p>
+            </ul>
+            
+             
+            <div class="mallDetail" id="bigbazarbharuch">
+                <a onclick="closeMallDetail('bigbazarbharuch','mallpopup')"><i class="fa fa-times"></i></a> 
+                <img src="img/bigbazarbharuch.jpg" alt="Big Bazar, Bharuch" />
+                <div>
+                    <h2>Big Bazar Shalimar Talkies Compound</h2>
+                    <div class="starRating">
+                        <span class="Gray">4.5 </span> 
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>Hypermarket</p>
+                    <hr />
+                    <table cellpadding="5">
+                        <tr>
+                            <td><i class="fa fa-map-marker"></i></td>
+                            <td>Shalimar Talkies 4 & 12, Railway Station Road Shalimar Mall Compound, Bharuch, Gujarat 392001</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-crosshairs"></i></td>
+                            <td>PX2R+CG Bharuch, Gujarat</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-globe"></i></td>
+                            <td><a href="https://www.bigbazaar.com" target="_blank">bigbazaar.com</a></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-phone"></i></td>
+                            <td>02642 244 460</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-hourglass-half"></i></td>
+                            <td><span style="color:red">Timing:</span> 10:30am - 10:30pm</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="mallDetail" id="dmartAnk">
+                <a onclick="closeMallDetail('dmartAnk','mallpopup')"><i class="fa fa-times"></i></a> 
+                <img src="img/dmartank.jpg" alt="D Mart, Ankleshwar" />
+                <div>
+                    <h2>D-Mart</h2>
+                    <div class="starRating">
+                        <span class="Gray">4.1 </span> 
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>Store</p>
+                    <hr />
+                    <table cellpadding="5">
+                        <tr>
+                            <td><i class="fa fa-map-marker"></i></td>
+                            <td>Rajpipla Rd, opp. ONGC Township, Gadkhol Part, Happy Nagar, Ankleshwar, Gujarat 393001</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-crosshairs"></i></td>
+                            <td>J2M7+XP Ankleshwar, Gujarat</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-globe"></i></td>
+                            <td><a href="https ://www.dmartindia.com" target="_blank">dmartindia.com</a></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-phone"></i></td>
+                            <td>02642 424 660</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-hourglass-half"></i></td>
+                            <td><span style="color:red">Timing:</span> 10:00am - 9:30pm</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="mallDetail" id="goldenSqaureAnk">
+                <a onclick="closeMallDetail('goldenSqaureAnk','mallpopup')"><i class="fa fa-times"></i></a> 
+                <img src="img/goldensquareank.jpg" alt="Golden Square, Ankleshwar" />
+                <div>
+                    <h2>Golden Square</h2>
+                    <div class="starRating">
+                        <span class="Gray">4.2 </span> 
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>store</p>
+                    <hr />
+                    <table cellpadding="5">
+                        <tr>
+                            <td><i class="fa fa-map-marker"></i></td>
+                            <td>GIDC, Ankleshwar GIDC, Ankleshwar, Gujarat 393001</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-crosshairs"></i></td>
+                            <td>J284+MF Ankleshwar GIDC Ankleshwar, Gujarat</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-phone"></i></td>
+                            <td>098257 95000</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-hourglass-half"></i></td>
+                            <td><span style="color:red">Timing:</span> 08:30am - 10:00pm</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+              
+            <div class="mallDetail" id="hindShopBharuch">
+                <a onclick="closeMallDetail('hindShopBharuch','mallpopup')"><i class="fa fa-times"></i></a> 
+                <img src="img/hindbharuch.jpg" alt="Hind Shopping, Bharuch" />
+                <div>
+                    <h2>Hind Shopping Store</h2>
+                    <div class="starRating">
+                        <span class="Gray">3.1 </span> 
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>Shopping Mall</p>
+                    <hr />
+                    <table cellpadding="5">
+                        <tr>
+                            <td><i class="fa fa-map-marker"></i></td>
+                            <td>B-104, Railway Station Road Pruthvi Trade Centre, Old Town, Bharuch, Gujarat 392001</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-crosshairs"></i></td>
+                            <td>PX2V+VV Old Town, Bharuch, Gujarat</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-globe"></i></td>
+                            <td><a href="https ://www.hindshop.fashcart.com" target="_blank">hindshop.fashcart.com</a></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-phone"></i></td>
+                            <td>081283 03061</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-hourglass-half"></i></td>
+                            <td><span style="color:red">Timing:</span> 9:30am - 11:00pm</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="mallDetail" id="silverPlazaAnk">
+                <a onclick="closeMallDetail('silverPlazaAnk','mallpopup')"><i class="fa fa-times"></i></a> 
+                <img src="img/silverplazaank.jpg" alt="Silver Plaza, Ankleshwar" />
+                <div>
+                    <h2>Silver Plaza Shopping Center</h2>
+                    <div class="starRating">
+                        <span class="Gray">4.1 </span> 
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>Shopping Mall</p>
+                    <hr />
+                    <table cellpadding="5">
+                        <tr>
+                            <td><i class="fa fa-map-marker"></i></td>
+                            <td>
+                                Ground Floor, GIDC Flyover, Near Railway Station Flyover Bridge, 
+                                Pratin Hotel Circle, Ankleshwar, Gujarat 393002
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-crosshairs"></i></td>
+                            <td>J2M7+XP Ankleshwar, Gujarat</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-phone"></i></td>
+                            <td>02642 276 343</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-hourglass-half"></i></td>
+                            <td><span style="color:red">Timing:</span> 09:00am - 6:30pm</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <a id="mallpopup" class="popup"></a>
+    
+    </div>
+    
+    <div class="footerContainer">
+        <div>
+            <p>Copyrights<i class="fa fa-copyright"></i> <span class="hideOnTab">All Rights Reserved by</span> scan & grab Inc.</p>
+            <div class="termspolicy">
+                <a href="service.html">Terms of Services</a> <span class="hideOnTab">/</span> <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div> 
+        <div class="contactContainer">
+                <div class="contactDetails">
+                <p><i class="fa fa-envelope-o"></i> info@scan.com</p>
+                <p><i class="fa fa-headphones"></i> (408) 373-4742</p>
+            </div>
+            <a href="#start"><i class="fa  fa-angle-up"></i></a>
+        </div>  
+    </div>
+</body>
+</html>

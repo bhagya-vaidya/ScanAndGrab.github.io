@@ -1,0 +1,175 @@
+<!Doctype html>
+<head>
+    <title>Scan & Grab</title>
+    
+    <!--<link rel="stylesheet" href="Css/desktop.css" /> -->
+    <link rel="stylesheet" href="Css/mystyle.css" />
+    <link rel="stylesheet" href="Css/common.css" />
+    <link rel="stylesheet"  type="text/css" href="font/css/font-awesome.min.css" />
+    <script src="js/myscript.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <a onclick="toggle()" id="threebar">
+            <i class="fa fa-bars"></i> 
+        </a>
+        <a href="index.html" class="logo" id="logo">Scan<span>&</span>Grab</a>
+        <ul id="menulist">
+            <li><a href="business.html">For Business</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a onclick="openContact()">Support</a></li> 
+        </ul>
+    </div>
+
+    <div id="supportContainer">
+        <a onclick="closeContact()">X</a>
+        <div class="contactModal">
+            <h2>We love to help you</h2>
+            <div class="contactIcons">
+                <a href="#"><i class="fa fa-headphones"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+            </div>
+            <div class="contactInfo">
+                <p>(408) 372-6463</p>
+                <p>info@scan.com</p>    
+            </div>   
+        </div>
+    </div>
+    <div class="BusinessTopContainer" id="start">
+        <div class="BusinessContainer">
+            <img src="img/mobiles.png" alt="MobileOnBackground"/>
+            <div>
+                <h2>Scan And Grab</h2>
+                <p>ALLOW YOUR SHOPPERS TO SCAN-PAY-GO</p>
+                <div>
+                    <a href="index.html">Home</a>
+                    <span> / </span>
+                    <a href="business/html">For Business</a>
+                </div>
+            </div> 
+        </div>   
+    </div>
+    
+    <div class="AppInfo">
+        <h2 class="Grey">What is <span>Scan and Grab</span>?</h2>
+        <hr/>
+        <p class="Gray">
+            Scan & Grab enables mobile app based self checkouts
+            and queue management solutions for offline stores 
+            which improves the experience. Customers use the 
+            app to discover stores and the available offers 
+            running, this ensures a good connect between the 
+            retail stores and the customers. We will eliminate
+            the line for buyers everywhere by delivering the e
+            asiest to use and most secure self-checkout 
+            solution. As we grow we are committed to investing
+            in our people and the communites where we operate 
+            to ensure we maintain long-term growth.
+        </p>
+    </div>
+    
+     <div class="RetailerInfo">
+            <div class="retailContactpart">
+                 <div>
+                    <h2>Let's get in touch</h2>
+                    <span>Got a question? we'd love to hear from you.</span>
+                    <p>
+                        Scan & Grab enables mobile app based self checkouts
+                        aiming to disrupt the in-store shopping experience 
+                        for the better. It comes along with a host of impressive 
+                        features, some of which you can look at below. Do talk 
+                        to us if you are interested. We are nice guys :)
+                    </p>
+                    <table cellpadding="10">
+                        <tr>
+                            <td><i class="fa fa-envelope-o"></i></td>
+                            <td>info@scan.com</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-headphones"></i></td>
+                            <td>(408) 373-4742</td>
+                        </tr>
+                    </table>
+                 </div>
+            </div>
+            <form class="contactform" name="contactform" onsubmit="return contactvalidate()" action="index.html" method="post">
+                    <div id="invalidname" class="invalidinput">
+                        <p>Please enter your full name.</p>
+                        <div class="downarrow"></div>
+                    </div>
+                    <div class="contactinput">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="* Full Name" name="fullname" oninput="valideachinput('invalidname')" />
+                    </div>
+                    
+                    <div id="invalidemail" class="invalidinput">
+                        <p id="emailerrormessage"></p>
+                        <div class="downarrow"></div>
+                    </div>
+                    <div class="contactinput">
+                        <i class="fa fa-envelope-o"></i>
+                        <input type="email" placeholder="* E-mail Id" name="email" oninput="valideachinput('invalidemail')"/>
+                    </div>
+                    
+                    <div id="invalidmessage" class="invalidinput">
+                        <p>Please enter your message.</p>
+                        <div class="downarrow"></div>
+                    </div>
+                    <textarea cols="32" rows="6" placeholder="* Messsage" name="message" oninput="valideachinput('invalidmessage')"></textarea>
+                    
+                    <input type="submit" value="Send" />
+                    <div class="arrow"></div>
+            </form>
+     </div>
+    
+    <div class="featureContainer">
+        <h2 class="Grey">Features</h2>
+        <hr class="underline" />
+        <div class="CenterContent featureContent">
+            <div class="features">
+                <img src="img/feature_checkout.png" alt="self checkout" />
+                <h2 class="Grey">Self-Checkout</h2>
+                <p class="Gray">
+                    Scalable checkout solution. 
+                    Reduce infrastructure costs. 
+                    Increase real estate.
+                </p>
+            </div>
+            <div class="features">
+                <img src="img/feature_offer.png" alt="self checkout" />
+                <h2 class="Grey">Smart Offers and Product Search</h2>
+                <p class="Gray">
+                    Generate dynamic offers and product recommendations
+                    to increase cart size and conversions.
+                </p>
+            </div>
+            <div class="features">
+                <img src="img/feature_checkout.png" alt="self checkout" />
+                <h2 class="Grey">Retail Bot</h2>
+                <p class="Gray">
+                     Give your customers a personal companion who 
+                     suggests products, shows offers and lets him 
+                     navigate within the store.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footerContainer">
+        <div>
+            <p>Copyrights<i class="fa fa-copyright"></i> <span class="hideOnTab">All Rights Reserved by</span> scan & grab Inc.</p>
+            <div class="termspolicy">
+                <a href="service.html">Terms of Services</a> <span class="hideOnTab">/</span> <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div> 
+        <div class="contactContainer">
+                <div class="contactDetails">
+                <p><i class="fa fa-envelope-o"></i> info@scan.com</p>
+                <p><i class="fa fa-headphones"></i> (408) 373-4742</p>
+            </div>
+            <a href="#start"><i class="fa  fa-angle-up"></i></a>
+        </div>  
+    </div>
+</body>
+</html>

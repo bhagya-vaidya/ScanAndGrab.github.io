@@ -1,0 +1,471 @@
+<!Doctype html>
+<head>
+    <title>Scan & Grab</title>
+    
+    <!--<link rel="stylesheet" href="Css/desktop.css" /> -->
+    <link rel="stylesheet" href="Css/mystyle.css" />
+    <link rel="stylesheet" href="Css/common.css" />
+    <link rel="stylesheet"  type="text/css" href="font/css/font-awesome.min.css" />
+    <script src="js/myscript.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <a onclick="toggle()" id="threebar">
+            <i class="fa fa-bars"></i> 
+        </a>
+        <a href="index.html" class="logo" id="logo">Scan<span>&</span>Grab</a>
+        <ul id="menulist">
+            <li><a href="business.html">For Business</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a onclick="openContact()">Support</a></li> 
+        </ul>
+    </div>
+
+    <div id="supportContainer">
+        <a onclick="closeContact()">X</a>
+        <div class="contactModal">
+            <h2>We love to help you</h2>
+            <div class="contactIcons">
+                <a href="#"><i class="fa fa-headphones"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+            </div>
+            <div class="contactInfo">
+                <p>(408) 372-6463</p>
+                <p>info@scan.com</p>    
+            </div>   
+        </div>
+    </div>
+    <div class="faqContainer" id="start">
+        <h2 class="Grey">faqs</h2>
+        <div class="faqSubContainer">
+            <p class="Gray">All your Questions answered in one place</p>
+            <div class="Gray">
+                <a href="index.html">Home</a>
+                <span> / </span>
+                <a href="faq.html">FAQ</a>
+            </div>
+        </div>
+        
+        <div>
+            <div class="tabs">
+                <a id="ALL" class="active" onclick="toggletab('#all','ALL')">All</a>
+                <a id="BUYER" onclick="toggletab('#buyers','BUYER')">Buyers</a>
+                <a id="MERCHANT" onclick="toggletab('#merchants','MERCHANT')">Merchants</a>
+                <a id="DEVELOPER" onclick="toggletab('#developers','DEVELOPER')">Developers</a>
+                <a id="SECURITY" onclick="toggletab('#security','SECURITY')">Security</a>
+                <a id="MIS" onclick="toggletab('#miscellaneous','MIS')">Miscellaneous</a>
+            </div>
+            
+            <div id="all" class="questionContainer">
+                <div class="questionans">
+                    <a onclick="toggleQuestion('AllwhatIsSNG')" class="Grey">
+                        <i class="fa fa-question-circle"></i>
+                        <span> What is Scan & Grab?</span>
+                    </a> 
+                    <p id="AllwhatIsSNG" class="answer Gray">
+                        Scan & Grab is the easiest, fastest, and most
+                        secure way which let you self-checkout while 
+                        shopping in mall.
+                    </p>
+                </div>
+                
+                <div class="questionans">
+                    <a onclick="toggleQuestion('Allhowitwork')" class="Grey">
+                        <i class="fa fa-question-circle"></i>
+                        <span> How does it work? </span>
+                    </a> 
+                    <p id="Allhowitwork" class="answer Gray"> 
+                        You first download the Scan & Grab app. Go to the mall 
+                        you want to buy items from and start scanning and adding 
+                        items to your cart. You will see bill generated on your 
+                        mobile. When you are ready to checkout, pay using any of 
+                        the payment options provided. Once you complete payment, 
+                        you can receive your items at and you are all done.         
+                    </p>
+                </div>
+                
+                <div class="questionans">
+                    <a onclick="toggleQuestion('Allhowmuchitcost')" class="Grey">
+                       <i class="fa fa-money"></i>
+                        <span> How much does it cost to use Scan & Grab? </span>
+                    </a> 
+                    <p id="Allhowmuchitcost" class="answer Gray">
+                        Price is dependent on the location. But typically it is 2% per cart.
+                    </p>
+                </div>
+                
+                <div class="questionans">
+                    <a onclick="toggleQuestion('Allcanreturnitem')" class="Grey">
+                        <i class="fa fa-comments-o"></i>
+                        <span> Can I return items using Scan & Grab? </span>
+                    </a> 
+                    <p id="Allcanreturnitem" class="answer Gray"> 
+                        Yes. There are several options for returns. 
+                        You can remove items from your cart before 
+                        you buy them. Even if you've bought an item, 
+                        return it to a mall like you normally would 
+                        for items purchased using the traditional checkout line.         
+                    </p>
+                </div>
+                
+                <div class="questionans">
+                    <a onclick="toggleQuestion('Allhowtogetdiscount')" class="Grey">
+                        <i class="fa fa-money"></i>
+                        <span> How do I get discounts or apply coupons? </span>
+                    </a> 
+                    <p id="Allhowtogetdiscount" class="answer Gray"> 
+                        Scan & Grab will show all the offers related to item that 
+                        you have scanned. It automatically applies mall discounts 
+                        that you are eligible to therefore you do not have to clip 
+                        coupons or swipe/carry loyalty cards. It also shows you how 
+                        much you saved before you checkout.         
+                    </p>
+                </div>
+                
+                <div class="questionans">
+                    <a onclick="toggleQuestion('Allhowfindmall')" class="Grey">
+                        <i class="fa fa-question-circle"></i> 
+                        <span> How to find Registered Malls? </span>
+                    </a> 
+                    <p id="Allhowfindmall" class="answer Gray"> 
+                        Using your mobile devices GPS or the location, 
+                        you enter Scan & Grab will show you registered malls near you.         
+                    </p>
+                </div>
+                
+                <div class="questionans">
+                    <a onclick="toggleQuestion('Allmailsupport')" class="Grey">
+                        <i class="fa fa-question-circle"></i>
+                        <span> How can I get support for an item which isn't working correctly? </span>
+                    </a> 
+                    <p id="Allmailsupport" class="answer Gray"> 
+                        Email: support@scan.com         
+                    </p>
+                </div>
+                
+                <div class="questionans">
+                    <a onclick="toggleQuestion('Allideaforapp')" class="Grey">
+                        <i class="fa fa-credit-card "></i>
+                        <span>  I have a great idea and would like to use Scan & Grab in my app? </span>
+                    </a> 
+                    <p id="Allideaforapp" class="answer Gray"> 
+                        The Scan & Grab REST APIs provides an easy and secure 
+                        way to enable mobile checkout and mobile payments. You 
+                        can take advantage of all the great benefits of Scan & 
+                        Grab while enabling customers to make checkout with only 
+                        a few clicks. To use our APIs you will need to get an API 
+                        key by emailing support@scan.com. To see our APIs visit: http://developer.scan.com.         
+                    </p>
+                </div>
+                
+                <div class="questionans">
+                    <a onclick="toggleQuestion('Alldatasafeapp')" class="Grey">
+                        <i class="fa fa-lock"></i> 
+                        <span> How does Scan & Grab keep my data safe? </span>
+                    </a> 
+                    <p id="Alldatasafeapp" class="answer Gray"> 
+                        Scan & Grab uses strong encryption/key management and 
+                        secure development. Stay tuned for more info where we 
+                        delve deep into our overall security design.         
+                    </p>
+                </div>
+                
+                 <div class="questionans">
+                    <a onclick="toggleQuestion('Alldataprivateapp')" class="Grey">
+                        <i class="fa fa-lock"></i> 
+                        <span>  How does Scan & Grab keep my data private? </span>
+                    </a> 
+                    <p id="Alldataprivateapp" class="answer Gray"> 
+                        The easiest way for us to protect your privacy is 
+                        to have minimal data about you. Your payment 
+                        information (Credit Card, PayPal, ApplePay, etc) 
+                        is never sent to Scan & Grab servers. All saved payment 
+                        items are protected with keys that Scan & Grab keeps on 
+                        protected on your device.         
+                    </p>
+                </div>
+                
+                 <div class="questionans">
+                    <a onclick="toggleQuestion('Alldatasafestolen')" class="Grey">
+                        <i class="fa fa-lock"></i> 
+                        <span>  My device was stolen. Is my Scan & Grab data safe? </span>
+                    </a> 
+                    <p id="Alldatasafestolen" class="answer Gray"> 
+                        Do not panic. Scan & Grab uses trusted device specific security 
+                        features to protect your data if your iPhone or Android device 
+                        is lost or stolen. Detail Alert: for iOS we use Keychain or LocalAuthentication.         
+                    </p>
+                </div>
+                
+                 <div class="questionans">
+                    <a onclick="toggleQuestion('Allmailsafe')" class="Grey">
+                        <i class="fa fa-lock"></i> 
+                        <span> I got an email from Scan & Grab. Is it legitimate? </span>
+                    </a> 
+                    <p id="Allmailsafe" class="answer Gray"> 
+                        Scan & Grab using DKIM to protect message sent to 
+                        you from info@scan.com and support@scan.com.         
+                    </p>
+                </div>
+                  
+            </div>
+            
+            
+            <div id="buyers" class="questionContainer">
+                <div class="questionans">
+                    <a onclick="toggleQuestion('whatIsSNG')" class="Grey">
+                        <i class="fa fa-question-circle"></i>
+                        <span> What is Scan & Grab? </span>
+                    </a> 
+                    <p id="whatIsSNG" class="answer Gray">
+                        Scan & Grab is the easiest, fastest, and most
+                        secure way which let you self-checkout while 
+                        shopping in mall.
+                    </p>
+                </div>
+                
+                <div class="questionans">
+                    <a onclick="toggleQuestion('howitwork')" class="Grey">
+                        <i class="fa fa-question-circle"></i>
+                        <span> How does it work? </span>
+                    </a> 
+                    <p id="howitwork" class="answer Gray"> 
+                        You first download the Scan & Grab app. Go to the mall 
+                        you want to buy items from and start scanning and adding 
+                        items to your cart. You will see bill generated on your 
+                        mobile. When you are ready to checkout, pay using any of 
+                        the payment options provided. Once you complete payment, 
+                        you can receive your items at and you are all done.         
+                    </p>
+                </div>
+                
+                <div class="questionans">
+                    <a onclick="toggleQuestion('howmuchitcost')" class="Grey">
+                       <i class="fa fa-money"></i>
+                        <span> How much does it cost to use Scan & Grab? </span>
+                    </a> 
+                    <p id="howmuchitcost" class="answer Gray">
+                        Price is dependent on the location. But typically it is 2% per cart.
+                    </p>
+                </div>
+                
+                <div class="questionans">
+                    <a onclick="toggleQuestion('canreturnitem')" class="Grey">
+                        <i class="fa fa-comments-o"></i>
+                        <span> Can I return items using Scan & Grab? </span>
+                    </a> 
+                    <p id="canreturnitem" class="answer Gray"> 
+                        Yes. There are several options for returns. 
+                        You can remove items from your cart before 
+                        you buy them. Even if you've bought an item, 
+                        return it to a mall like you normally would 
+                        for items purchased using the traditional checkout line.         
+                    </p>
+                </div>
+                
+                <div class="questionans">
+                    <a onclick="toggleQuestion('howtogetdiscount')" class="Grey">
+                        <i class="fa fa-money"></i>
+                        <span> How do I get discounts or apply coupons? </span>
+                    </a> 
+                    <p id="howtogetdiscount" class="answer Gray"> 
+                        Scan & Grab will show all the offers related to item that 
+                        you have scanned. It automatically applies mall discounts 
+                        that you are eligible to therefore you do not have to clip 
+                        coupons or swipe/carry loyalty cards. It also shows you how 
+                        much you saved before you checkout.         
+                    </p>
+                </div>
+                
+                <div class="questionans">
+                    <a onclick="toggleQuestion('howfindmall')" class="Grey">
+                        <i class="fa fa-question-circle"></i> 
+                        <span> How to find Registered Malls? </span>
+                    </a> 
+                    <p id="howfindmall" class="answer Gray"> 
+                        Using your mobile devices GPS or the location, 
+                        you enter Scan & Grab will show you registered malls near you.         
+                    </p>
+                </div>
+                
+                <div class="questionans">
+                    <a onclick="toggleQuestion('mailsupport')" class="Grey">
+                        <i class="fa fa-question-circle"></i>
+                        <span> How can I get support for an item which isn't working correctly? </span>
+                    </a> 
+                    <p id="mailsupport" class="answer Gray"> 
+                        Email: support@scan.com         
+                    </p>
+                </div>
+                  
+            </div>
+            
+             
+            <div id="merchants" class="questionContainer">
+                <div class="questionans">
+                    <a onclick="toggleQuestion('merchantwhatIsSNG')" class="Grey">
+                        <i class="fa fa-question-circle"></i>
+                        <span> What is Scan & Grab? </span>
+                    </a> 
+                    <p id="merchantwhatIsSNG" class="answer Gray">
+                        Scan & Grab is the easiest, fastest, and most
+                        secure way which let you self-checkout while 
+                        shopping in mall.
+                    </p>
+                </div>
+                
+                <div class="questionans">
+                    <a onclick="toggleQuestion('merchantmailsupport')" class="Grey">
+                        <i class="fa fa-question-circle"></i>
+                        <span> How can I get support for an item which isn't working correctly? </span>
+                    </a> 
+                    <p id="merchantmailsupport" class="answer Gray"> 
+                        Email: support@scan.com         
+                    </p>
+                </div>
+            </div>
+            
+            
+            <div id="developers" class="questionContainer">
+                <div class="questionans">
+                    <a onclick="toggleQuestion('developermailsupport')" class="Grey">
+                        <i class="fa fa-question-circle"></i>
+                        <span> How can I get support for an item which isn't working correctly? </span>
+                    </a> 
+                    <p id="developermailsupport" class="answer Gray"> 
+                        Email: support@scan.com         
+                    </p>
+                </div>
+                
+                <div class="questionans">
+                    <a onclick="toggleQuestion('ideaforapp')" class="Grey">
+                        <i class="fa fa-credit-card "></i>
+                        <span>  I have a great idea and would like to use Scan & Grab in my app? </span>
+                    </a> 
+                    <p id="ideaforapp" class="answer Gray"> 
+                        The Scan & Grab REST APIs provides an easy and secure 
+                        way to enable mobile checkout and mobile payments. You 
+                        can take advantage of all the great benefits of Scan & 
+                        Grab while enabling customers to make checkout with only 
+                        a few clicks. To use our APIs you will need to get an API 
+                        key by emailing support@scan.com. To see our APIs visit: http://developer.scan.com.         
+                    </p>
+                </div>
+            </div>
+            
+            
+            <div id="security" class="questionContainer">
+                 <div class="questionans">
+                    <a onclick="toggleQuestion('datasafeapp')" class="Grey">
+                        <i class="fa fa-lock"></i> 
+                        <span> How does Scan & Grab keep my data safe? </span>
+                    </a> 
+                    <p id="datasafeapp" class="answer Gray"> 
+                        Scan & Grab uses strong encryption/key management and 
+                        secure development. Stay tuned for more info where we 
+                        delve deep into our overall security design.         
+                    </p>
+                </div>
+                
+                 <div class="questionans">
+                    <a onclick="toggleQuestion('dataprivateapp')" class="Grey">
+                        <i class="fa fa-lock"></i> 
+                        <span>  How does Scan & Grab keep my data private? </span>
+                    </a> 
+                    <p id="dataprivateapp" class="answer Gray"> 
+                        The easiest way for us to protect your privacy is 
+                        to have minimal data about you. Your payment 
+                        information (Credit Card, PayPal, ApplePay, etc) 
+                        is never sent to Scan & Grab servers. All saved payment 
+                        items are protected with keys that Scan & Grab keeps on 
+                        protected on your device.         
+                    </p>
+                </div>
+                
+                 <div class="questionans">
+                    <a onclick="toggleQuestion('datasafestolen')" class="Grey">
+                        <i class="fa fa-lock"></i> 
+                        <span>  My device was stolen. Is my Scan & Grab data safe? </span>
+                    </a> 
+                    <p id="datasafestolen" class="answer Gray"> 
+                        Do not panic. Scan & Grab uses trusted device specific security 
+                        features to protect your data if your iPhone or Android device 
+                        is lost or stolen. Detail Alert: for iOS we use Keychain or LocalAuthentication.         
+                    </p>
+                </div>
+                
+                 <div class="questionans">
+                    <a onclick="toggleQuestion('mailsafe')" class="Grey">
+                        <i class="fa fa-lock"></i> 
+                        <span> I got an email from Scan & Grab. Is it legitimate? </span>
+                    </a> 
+                    <p id="mailsafe" class="answer Gray"> 
+                        Scan & Grab using DKIM to protect message sent to 
+                        you from info@scan.com and support@scan.com.         
+                    </p>
+                </div>
+                    
+            </div>
+            
+            
+            <div id="miscellaneous" class="questionContainer">
+                <div class="questionans">
+                    <a onclick="toggleQuestion('miscellhowitwork')" class="Grey">
+                        <i class="fa fa-question-circle"></i>
+                        <span> How does it work? </span>
+                    </a> 
+                    <p id="miscellhowitwork" class="answer Gray"> 
+                        You first download the Scan & Grab app. Go to the mall 
+                        you want to buy items from and start scanning and adding 
+                        items to your cart. You will see bill generated on your 
+                        mobile. When you are ready to checkout, pay using any of 
+                        the payment options provided. Once you complete payment, 
+                        you can receive your items at and you are all done.         
+                    </p>
+                </div>
+                
+                <div class="questionans">
+                    <a onclick="toggleQuestion('miscellhowmuchitcost')" class="Grey">
+                       <i class="fa fa-money"></i>
+                        <span> How much does it cost to use Scan & Grab? </span>
+                    </a> 
+                    <p id="miscellhowmuchitcost" class="answer Gray">
+                        Price is dependent on the location. But typically it is 2% per cart.
+                    </p>
+                </div>
+                
+                <div class="questionans">
+                    <a onclick="toggleQuestion('miscellhowfindmall')" class="Grey">
+                        <i class="fa fa-question-circle"></i> 
+                        <span> How to find Registered Malls? </span>
+                    </a> 
+                    <p id="miscellhowfindmall" class="answer Gray"> 
+                        Using your mobile devices GPS or the location, 
+                        you enter Scan & Grab will show you registered malls near you.         
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="footerContainer">
+        <div>
+            <p>Copyrights<i class="fa fa-copyright"></i> <span class="hideOnTab">All Rights Reserved by</span> scan & grab Inc.</p>
+            <div class="termspolicy">
+                <a href="service.html">Terms of Services</a> <span class="hideOnTab">/</span> <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div> 
+        <div class="contactContainer">
+                <div class="contactDetails">
+                <p><i class="fa fa-envelope-o"></i> info@scan.com</p>
+                <p><i class="fa fa-headphones"></i> (408) 373-4742</p>
+            </div>
+            <a href="#start"><i class="fa  fa-angle-up"></i></a>
+        </div>  
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+ <!Doctype html>
+<head>
+    <title>Scan & Grab</title>
+    
+    <!--<link rel="stylesheet" href="Css/desktop.css" /> -->
+    <link rel="stylesheet" href="Css/mystyle.css" />
+    <link rel="stylesheet" href="Css/common.css" />
+    <link rel="stylesheet"  type="text/css" href="font/css/font-awesome.min.css" />
+    <script src="js/myscript.js"></script>
+    <style>
+        .menu{
+            background-color: rgba(0,0,0,0.5);
+        }
+        #threebar, .logo{
+            color:white;
+        }
+        #menulist li a{ color: white;}
+        #menulist li a:hover{ color: #ddd; }
+        @media screen and (max-width:960px){
+            #menulist{
+                background-color:rgba(0,0,0,0.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="topContent" > 
+        <div class="menu">
+            <a onclick="toggle()" id="threebar">
+                <i class="fa fa-bars"></i> 
+            </a>
+            <a href="index.html" class="logo" id="logo">Scan<span>&</span>Grab</a>
+            <ul id="menulist">
+                <li><a href="business.html">For Business</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="faq.html">Faq</a></li>
+                <li><a onclick="openContact()">Support</a></li> 
+            </ul>
+        </div>
+
+        <div id="supportContainer">
+            <a onclick="closeContact()">X</a>
+            <div class="contactModal">
+                <h2>We love to help you</h2>
+                <div class="contactIcons">
+                    <a href="#"><i class="fa fa-headphones"></i></a>
+                    <a href="#"><i class="fa fa-envelope"></i></a>
+                </div>
+                <div class="contactInfo">
+                    <p>(408) 372-6463</p>
+                    <p>info@scan.com</p>    
+                </div>   
+            </div>
+        </div>
+        <div class="headerContent" id="start"> 
+            <h2>scan & grab</h2>
+            <p>the fastest, easiest and most secure way to checkout.</p>
+            <div>
+                <a href="#"><img src="img/playstore.png" alt="playstore" /></a>
+                <a href="#"><img src="img/appstore.png" alt="appstore" /></a>
+            </div>
+        </div>
+    </div>
+    <div class="workMainContainer textCenter">
+        <h2 class="Grey">How Its Works</h2>
+        <hr class="underline" />
+        <div class="workContainer">
+            <div class="workMainContent">
+                <h1 class="Red">1.</h1>
+                <div class="workcontent">
+                    <h2 class="Grey">Find</h2>
+                    <p>After installing the app, register and then login to your app.It will show all the registered
+                        malls of your city. select the one you have visited.</p>
+                    <img src="img/mallList.png" alt="List of malls" />
+                </div>
+            </div>
+            
+            <div class="workMainContent">
+                <h1 class="Red">2.</h1>
+                <div class="workcontent">
+                    <h2 class="Grey">Add</h2>
+                    <p>Add items to your cart by scanning Barcode or QrCode. You can also create To-Do list. </p>
+                    <img src="img/scanning.png" alt="List of malls" />
+                </div>
+            </div>
+            
+            <div class="workMainContent">
+                <h1 class="Red">3.</h1>
+                <div class="workcontent">
+                    <h2 class="Grey">Pay & Go</h2>
+                    <p>Pay for your cart of items at payment counter or using a Credit Card, PayPal, or ApplePay</p>
+                    <img src="img/bill.png" alt="List of malls" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerContainer">
+        <div>
+            <p>Copyrights<i class="fa fa-copyright"></i> <span class="hideOnTab">All Rights Reserved by</span> scan & grab Inc.</p>
+            <div class="termspolicy">
+                <a href="service.html">Terms of Services</a> <span class="hideOnTab">/</span> <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div> 
+        <div class="contactContainer">
+                <div class="contactDetails">
+                <p><i class="fa fa-envelope-o"></i> info@scan.com</p>
+                <p><i class="fa fa-headphones"></i> (408) 373-4742</p>
+            </div>
+            <a href="#start"><i class="fa  fa-angle-up"></i></a>
+        </div>  
+    </div>
+</body>
+</html>

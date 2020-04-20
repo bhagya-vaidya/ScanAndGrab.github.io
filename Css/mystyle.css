@@ -1,0 +1,1066 @@
+ /*===================================     desktop view     ====================================*/
+
+ /*--------------------    menu    ------------------------*/
+ .topContent{
+        background-image: url("../img/poster.jpg");
+        width:100%;
+        height:700px;
+        background-size:cover;
+ }
+.menu{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    font-weight: bolder; 
+    border-bottom: 1px solid #dddddd;
+    background-color: white;
+    position:fixed;
+    top:0;
+    z-index:3;
+}
+#threebar{ display:none; }
+.logo{
+    font-family: cursive;
+    width:200px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-right: 1px solid #dddddd;
+    text-decoration: none;
+    cursor: pointer;
+    color:#626161;
+    font-size: 1.9em;
+}
+.logo:hover{ color:grey; }
+#menulist{
+    display: flex;
+    justify-content:start;
+    align-items:center;
+    list-style-type: none;
+}
+#menulist li{ margin: 0 20px; }
+#menulist li a{
+    text-decoration:none;
+    color:#474545;
+    font-size:1.4em;
+    cursor:pointer;
+}
+#menulist li a:hover{ color:grey;}
+
+/*--------------------    footer    ------------------------*/
+.footerContainer{
+    background-color: #323232;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 80px;
+    color:#6f6f6f;
+    display: flex;
+    justify-content:space-between;
+}
+.termspolicy{ margin-top:10px; }
+.termspolicy a{
+    color:#6f6f6f;
+    text-decoration: none;
+}
+.termspolicy a:hover{ color:white; }
+.contactContainer{
+    display: flex;
+    flex-direction:column;
+    direction:rtl;
+}
+.contactDetails{
+    display:flex;
+    margin: 0 0 10px;
+    direction: ltr;
+}
+.contactDetails p{ margin-right:30px; }
+.contactContainer a{
+    font-size:1.7em;
+    color: white;
+    background-color: #191919;
+    width:18px;
+    padding:5px 10px;
+}
+
+/*--------------------    homepage-header content    ------------------------*/
+.headerContent{
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.2);
+    padding:250px 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+.headerContent h2{
+    font-size: 6em;
+    text-transform: uppercase;
+    color:white;
+}
+.headerContent p{
+    color:white;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin: 20px 0 50px;
+} 
+.headerContent div{
+    display:flex;
+    justify-content:center;
+}
+.headerContent div a img{
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.headerContent div a:nth-child(2){ margin-left:30px;}
+
+/*--------------------   homepage-workContainer    ------------------------*/ 
+.workMainContainer{
+    width:80%;
+    margin:150px auto   ;
+}
+.workMainContainer h2{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+.workContainer{
+    width:100%;
+    margin-top:70px;
+    display:flex;
+    justify-content:space-between;
+}
+.workMainContent{
+    width:350px;
+    display:flex;
+    justify-content:space-between;
+}
+.workcontent{
+    width:80%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.workcontent h2{
+    text-align: left;
+    font-size: 1.7em;
+    margin: 10px 0;
+}
+.workcontent p{
+    text-align:justify;
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: gray;
+    margin: 10px 0;
+}
+.workcontent img{
+    width:80%;
+    margin: 10px auto 0;
+}
+
+/*--------------------    support page   ------------------------*/
+#supportContainer{
+    display:none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 3;
+}
+#supportContainer>a{
+    color:rgba(255,255,255,0.6);
+    font-size: 1.5em;
+    position: fixed;
+    top:10px;
+    right:15px;
+    cursor: pointer;
+}
+#supportContainer>a:hover{ color:white; }
+.contactModal{
+    width:500px;
+    margin: 250px auto;
+    background-color: white;
+    padding:30px;
+    text-align: center;
+}
+.contactModal h2{
+    color:#474545;
+    font-size: 2em;
+}
+.contactIcons,.contactInfo{
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+}
+.contactIcons{ margin-top:40px; }
+.contactIcons a{
+    font-size: 3em;
+    color:white;
+    background-color: red;
+    border-radius:100%;
+    padding: 20px 27px;
+}
+.contactInfo{ margin-top: 20px; }
+.contactInfo p{
+    font-size: 1.3em;
+    font-weight: bold;
+    color:rgb(51, 51, 51);
+}
+/*--------------------    Privacy policy and Terms of services page    ------------------------*/
+.mainContentHolder{
+    width:800px;
+    margin: 190px auto 100px 100px;    
+}
+.mainContentHolder>h1{
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+.mainContentHolder>p{ margin-top: 20px; }
+.subContent{ margin-top: 50px; }
+.subContent h2{ font-size:1.5em; }
+.subContent p{ 
+    font-size: 1em;
+    text-align: justify;
+    margin-top:20px;
+    line-height: 1.5;
+}
+.subContent h3{ margin-top:20px;}
+/*--------------------    About Us page    ------------------------*/
+.AboutTopContainer, .BusinessTopContainer{
+    background-size:cover;
+    width:100%;
+    height:400px;
+    margin-top: 90px;
+}
+.AboutTopContainer{ background-image: url("../img/aboutbackground.jpg"); }
+.AboutContainer{
+    width: 80%;
+    margin: 0 auto;
+    color:white;
+    padding-top: 200px;
+}
+.AboutContainer h1{
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.AboutSubContainer{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+}
+.AboutSubContainer p{ font-size:1.3em;}
+.AboutLink a{
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+}
+.AboutLink a:hover{ color:#d0d0d0; }
+/*--------------------    about us page- content    ------------------------*/
+.AboutContent,.ContributorContainer{ width:800px; } 
+.AboutContent{ margin: 100px auto; }
+.ContributorContainer{ margin: 0 auto 100px; }
+.CenterContent{
+    display:flex;
+    justify-content:space-between;
+} 
+.ContributorContent{ margin-top: 40px; }
+.AboutInfo{ width:230px; } 
+.AboutInfo h2{
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+.AboutInfo h2 span{ color:#008690; }
+.AboutInfo hr{ border: 1px solid #de0c0c;}
+.AboutInfo p{
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 1.05em;  
+}                     
+.ContributorContainer>h2{
+    font-size: 1.7em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.ContributorContainer>p{ 
+    text-align: center;
+    margin-top: 10px;
+}
+.ContributorInfo{
+    width:230px;
+    text-align:center;
+}
+.ContributorInfo img{
+    width:100%;
+    height:230px;
+    border-radius:100%;
+}
+.ContributorInfo h3{ font-size: 1.3em; }
+.ContributorInfo p{
+    font-weight: 570;
+    margin-top: 20px;
+}
+/*--------------------    Business page - top   ------------------------*/
+.BusinessTopContainer{ 
+    background-image: url("../img/businessbg.jpg");
+}
+.BusinessTopContainer img{
+    position: absolute;
+    top:20px;
+    right:0;
+    height:500px;
+    width:330px;
+}
+.BusinessContainer{
+    width:80%;
+    margin:0 auto;
+    padding-top: 100px;
+    color: white;
+    position:relative;
+}
+.BusinessContainer h2{
+    font-size: 5vw;
+    text-transform:uppercase;
+}
+.BusinessContainer p{
+    font-size:1.7vw;
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+    width:fit-content;
+    margin-top:10px;
+}
+.BusinessContainer div div{ margin-top:25px; }
+.BusinessContainer div a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.4vw;
+}
+/*--------------------    Business page - what is S & G   ------------------------*/
+.AppInfo , .featureContainer{
+    width:800px;
+}
+.AppInfo{ margin:170px auto 50px;}
+.AppInfo h2{
+    font-size:2.5em;
+    text-align: center;
+}
+.AppInfo h2 span{ color: #008690; }
+.AppInfo hr{ 
+    border: 1px solid #de0c0c;
+    background-color: #de0c0c;
+}
+.AppInfo p{
+    margin-top:40px;
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 1.2em;
+} 
+/*--------------------    Business page - Retailer   ------------------------*/
+.RetailerInfo{
+    width:800px;
+    height:439px;
+    margin:0 auto; 
+    display: flex;
+} 
+.retailContactpart{
+    width:400px;
+    background-image: url("../img/shopmap.png");
+    box-sizing:border-box;
+}
+.retailContactpart>div{
+    background-color: #ffffffb5;
+    padding: 50px;
+}
+.retailContactpart>div h2{
+    font-size: 1.5em;  
+    margin-bottom: 2px;
+}
+.retailContactpart>div span{
+    display: inline-block;
+    font-size: 0.9em;  
+    margin-bottom: 15px;
+    color:grey;
+}
+.retailContactpart>div p{  
+    color:#635f5f;
+    text-align: justify;
+    line-height: 1.2;
+    font-size: 1.1em;
+}
+.retailContactpart>div table{ margin:30px 0 0 10px; }
+.retailContactpart i{ color:red; }
+.contactform{
+    width:400px;
+    background-color: #008690;
+    padding: 50px;
+    box-sizing:border-box;
+    position:relative;
+}
+.contactinput{
+    border: 1px solid white;
+    border-radius:20px;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.contactinput input{
+    width: 88%;
+    height:23px;
+    background-color: transparent;
+    border: transparent;
+    color:white; 
+}
+.contactinput input:focus, textarea:focus, button:focus{ outline:none; }
+.contactform ::placeholder{ color:white; }
+textarea{
+    border:1px solid white;
+    border-radius:20px;
+    background-color:transparent;
+    padding:10px;
+    box-sizing:border-box;
+    color:white;
+    font-size: 1.1em;
+     margin-bottom: 20px;
+}
+input[type=submit]{
+    width: 60%; 
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.05em;
+    margin:0 20%;
+    cursor:pointer;
+}
+.arrow{
+    position: absolute;
+    top: 35px;
+    left: -30px;
+    border-top: 15px solid transparent;
+    border-right: 30px solid #008690;
+    border-bottom: 15px solid transparent;
+}
+#invalidname, #invalidemail, #invalidmessage{
+    display:none;
+}
+.invalidinput{
+    width: fit-content;
+    border-radius: 10px;
+    background-color: white;
+    padding: 7px 15px;
+    color: red;
+    transform: translate(0px,-15px);
+    transition: transform 0.3s linear; 
+}
+.downarrow{
+    border-top: 20px solid white;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    bottom: -10px;
+    left: 30px;
+}
+
+
+
+
+/*--------------------    Business page - features   ------------------------*/
+.featureContainer{ margin: 100px auto 50px;}
+.featureContainer>h2{
+    font-size: 2.5em;
+    text-align:center;
+}
+.featureContent{ margin-top: 50px; }
+.features{
+    width:230px;
+    text-align: center;
+}
+.features img{
+    width:200px;
+    height:200px;
+}
+.features h2{
+    font-size: 1.7em;
+    margin-top: 5px;
+}
+.features p{
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+/*--------------------    FAQ page      ------------------------*/
+.faqContainer{
+    width:800px;
+    margin: 190px auto 100px;
+}
+.faqContainer h2{
+    font-size: 2.5em;
+    text-transform: uppercase
+}
+.faqSubContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+.faqSubContainer div a{
+    color:grey;
+    text-decoration: none;
+}
+.tabs{
+    margin-top:100px;
+    display:flex;
+    justify-content:start;
+}
+.active{
+    background-color: #474545 !important;
+    color:white !important;
+    border: 1px solid #00000000 !important;
+}
+.tabs a{
+    border: 1px solid #eee;
+    padding:8px 15px;
+    background-color: #eeeeee6e;
+    font-size: 1.2em;
+    color: grey;
+    cursor: pointer;
+    text-decoration: none;
+}
+.tabs a:nth-child(1){ border-radius: 5px 0 0 5px; }
+.tabs a:nth-child(6){ border-radius: 0 5px 5px 0; }
+.tabs a:hover{ 
+    box-shadow: 0px 3px 11px 2px rgba(0,0,0,0.2);
+    border-radius:5px; 
+}
+.questionContainer{ margin-top:50px; }
+#all{ display:block; }
+#buyers, #merchants, #developers, #security, #miscellaneous{ display: none; }
+.questionans{ margin-top:20px; }
+.questionans a{
+    cursor: pointer;
+    font-size: 1.1em;
+}
+.questionans a i{ width:30px; }
+.answer{
+    max-height:0;
+    height: 0;
+    transform:scaleY(0); 
+    margin-left:35px;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 1em;
+}
+/*--------------------    location Page- head    ------------------------*/  
+.locationContainer{
+    width:100%;
+    overflow:hidden;
+    position: relative;
+    margin-top: 90px;
+    height: 650px;
+}
+.locationContainer img{
+    width: 100%;
+    height:100%; 
+} 
+.search{
+    position: absolute;
+    top:10px;
+    left:10px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #8080804f;
+    border-radius:10px; 
+    display:flex;
+    align-items:center; 
+    z-index: 2;
+    box-shadow: #8080804f 0px 0px 5px 2px;
+}
+.search input{
+    border:1px solid white;
+    font-size: 0.97em;
+    width:200px;
+    height:22px;
+    margin-right: 10px;
+}
+.search input:focus{ outline: none; }
+.search div{ 
+    font-size:1.1em;
+    display: flex;
+}
+.search div a{ cursor:pointer; }
+.search div a:hover{ color:black; }
+.sitepath{
+    color:grey;
+    font-size: 1em;
+    font-weight:550;
+    position: absolute;
+    top:10px;
+    right:20px;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px;
+    box-shadow: #80808026 0px 0px 4px 4px;
+}
+.sitepath a{
+    color: grey;
+    text-decoration: none;
+}
+.sitepath a:hover{ color:#555; }
+.autocomplete{
+    display:none;
+    width: 279px;
+    height: auto;
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid #8080804f;
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    background-color: white;
+    padding:10px;
+    box-sizing: border-box;
+    z-index: 2;
+    list-style-type: none;
+    box-shadow: #8080804f 0px 3px 5px 2px;
+} 
+.autocomplete li{ margin: 10px 0px; }
+.autocomplete li a{
+    font-size: 0.97em;
+    color:grey;
+    cursor:pointer;  
+}
+.noresult{
+    display:none;
+    margin: 10px 0;
+    font-size: 0.97em;
+    color:grey;
+    text-align:center;
+}
+.autocomplete li a:hover{ 
+    color:#555;
+    font-weight:bold;
+}
+.closeSearch{ display:none; }
+.mallDetail{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border: 1px solid #8080804f;
+}
+#dmartAnk, #bigbazarbharuch, #goldenSqaureAnk, #hindShopBharuch, #silverPlazaAnk{
+    display:none;
+}
+#bigbazarpopup{
+    display:none;
+}
+.popup{
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:blue;
+    position: absolute;
+}
+.mallDetail img{
+    width:100%;
+    height:220px;
+}
+.mallDetail>a{
+    position:absolute;
+    top:0px;
+    right:5px;
+    color:#efefef;
+    font-size: 1.6em;
+    text-decoration: none;
+    -webkit-text-stroke: black 2px;
+}
+.mallDetail>a:hover{ color:white; }
+.mallDetail>div{ 
+    padding:20px 10px;
+    position:relative;
+}
+.mallDetail div h2{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.starRating{ margin-bottom: 10px;}
+.checked { color: orange; }
+.mallDetail div p{
+    font-size: 0.9em;
+    color: grey;
+    margin-bottom: 15px;
+
+}
+.mallDetail div hr{
+    border:0.7px solid #80808026;
+    margin-bottom: 15px;
+}
+.mallDetail div table {
+    font-size: 0.95em;
+    color: grey;
+}
+.mallDetail div tr td:nth-child(1){
+     width: 30px;
+     color: #1a73e8;
+     font-size: 1.5em;
+}
+.mallDetail div tr td a{
+    color:grey;
+    text-decoration: none;
+}
+.mallDetail div tr td a:hover{
+    color:black;
+    text-decoration: underline;
+}
+
+/*=================================     tablet view     =====================================*/
+
+@media screen and (max-width:960px){
+
+/*--------------------    menu    ------------------------*/ 
+    #threebar{ 
+        display:block;
+        width:100px; 
+        text-align:center;
+        font-size:2em;
+    }
+    .menu{
+        height:70px;
+        justify-content:start;
+        align-items:center;
+        /*position:relative;*/
+    }
+    .logo{
+        width:calc(100% - 100px);
+        text-align:center;
+        border-right:none;
+    }                       
+    #menulist{
+        display:none; 
+        position:absolute;
+        top:71px;
+        width:calc(100% - 40px);
+        background-color:white;
+        text-align:left;
+        padding-left:40px; 
+    }
+    #menulist li{ margin:10px 0; }
+    
+/*--------------------    footer    ------------------------*/
+    .footerContainer{ padding:40px; } 
+    .hideOnTab{ display:none; }
+    .termspolicy{
+        display:flex;
+        flex-direction:column;
+    }
+    .contactDetails{ flex-direction:column; }
+    .termspolicy a:nth-child(1),.contactDetails p:nth-child(1){ margin-bottom:10px; }
+
+/*--------------------    homepage-headercontent    ------------------------*/
+    .headerContent h2{ font-size: 5em;}
+
+    .workMainContainer{
+        margin:120px auto;
+        width:55%;
+    }
+    .workContainer{ 
+        display:block; 
+        margin-top:0;
+    }
+    .workMainContent{ 
+        width:100%;
+        margin:60px auto;
+    }
+/*--------------------   support page    ------------------------*/    
+    .contactModal{ width:470px; }
+/*--------------------   privacy policy page    ------------------------*/
+    .mainContentHolder{
+        width:60%;
+        margin: 170px auto 100px 75px;    
+    }
+/*--------------------    About Us page    ------------------------*/ 
+    .AboutTopContainer, .BusinessTopContainer{ margin-top:70px; }
+    .AboutSubContainer p{ font-size:1.2em; }
+    .AboutLink a{ font-size:0.9em;}
+/*--------------------    About Us page-content    ------------------------*/
+    .AboutContent{
+        width:500px; 
+        flex-direction:column;
+        margin:100px auto 60px;
+    }
+    .AboutInfo{
+        width:calc(100% - 40px);
+        padding:0 20px;
+        margin-bottom:40px;
+    }  
+    .ContributorContainer{ width: 500px; } 
+    .ContributorContent{ 
+        flex-direction:column;
+        align-items:center;
+        margin-top:0;
+    }
+    .ContributorInfo{
+        width:70%;
+        margin-top:40px;
+    }
+    .ContributorInfo img{ width:230px; }
+/*--------------------    Business page - top   ------------------------*/
+    .BusinessContainer img{
+        height: 450px;
+        width: 280px;
+    }
+    .BusinessContainer{ width:90%; }  
+    .BusinessContainer div{ width:43%; }
+    .BusinessContainer h2{ font-size:3em; }
+    .BusinessContainer p{ 
+        font-size:1.2em;
+        margin-top:0;
+    }
+    .BusinessContainer div div{ margin-top:10px; }
+    .BusinessContainer div div a{ font-size:1.1em; }
+    .RetailerInfo{
+        width:500px;
+        height:auto;
+        flex-direction:column;
+    }
+    .retailContactpart, .contactform{ width:100%; }
+    .contactinput{
+        font-size: 1.3em;
+        padding: 5px 20px;
+        margin-bottom: 15px;
+    }
+    .contactinput input{ 
+        height:auto;
+        width:90%;
+        margin-left:5px;
+    }
+    textarea{
+        width: 100%;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+    button{
+        padding: 5px;
+        font-size:1em;
+    }
+    .arrow{
+        top: -45px;
+        left: 55px;
+        border-bottom: 30px solid #008690;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+    }
+    .invalidinput{ transform: translate(0px,-11px); }
+    .AppInfo {
+        width: 500px;
+        margin: 150px auto 50px;
+    }
+    .AppInfo h2{ font-size:2.3em; }
+    .AppInfo p{ 
+        font-size:1.1em;
+        line-height:1.5;
+        margin-top:30px;
+    }
+    .featureContainer{ 
+        width:500px;
+        margin: 100px auto 50px;
+    }
+    .featureContent{
+        flex-direction:column;
+        align-items: center;
+        margin-top: 0;
+    }
+    .features{
+        width: 90%;
+        margin-top: 40px;
+    }
+    
+/*--------------------    FAQ page      ------------------------*/
+    .faqContainer{
+        width:520px;
+        margin-top:170px;
+    }
+    .faqContainer h2{ font-size: 2.4em; }
+    .faqSubContainer{ font-size: 1.1em; }
+    .tabs{ margin-top:70px;}
+    .tabs a{ 
+        padding:7px;
+        font-size: 1.1em;
+    } 
+    .questionans a{ 
+        font-size:1.09em;
+        font-weight:570;
+        display:flex;
+    }
+    .answer{ font-size:0.9em; } 
+/*--------------------    location Page    ------------------------*/
+    .locationContainer{ margin-top:70px; } 
+    .sitepath{
+        font-size:0.9em;
+        padding:7px;
+        right:10px;
+    } 
+    .search{ padding:7px; }
+    .search input{
+        width:150px;
+        height:20px;
+    }
+    .autocomplete{
+        width:223px;
+        top:49px;
+        padding:7px;
+    }
+    .autocomplete li { margin: 5px 0px; }
+    .autocomplete li a, .noresult{ font-size: 0.95em; }
+    .mallDetail{ width:230px; }
+    .mallDetail>a{ font-size:1.5em; }
+    .mallDetail img{ height:200px; }
+    .mallDetail>div{ padding:10px; }
+    .mallDetail div h2{ font-size:1.3em; }
+    .mallDetail div h2, .starRating{ margin-bottom: 7px; }
+    .mallDetail div table{ font-size:0.9em; }
+    .mallDetail div tr td:nth-child(1){ font-size:1.3em; }
+
+}
+
+
+
+/*===================================     mobile view     ====================================*/
+
+ @media screen and (max-width:580px){
+/*--------------------    menu    ------------------------*/ 
+    .logo,#threebar{ font-size:1.7em; }    
+/*--------------------    homepage-headercontent    ------------------------*/
+    .topContent{ height:500px}
+    .headerContent{ padding:35% 0 0;}
+    .headerContent h2{ font-size:2.7em; }
+    .headerContent p{ font-size:1em; }
+    .headerContent div{ flex-direction:column; } 
+    .headerContent div a:nth-child(2){ margin:10px 0 0 0; }
+/*--------------------   homepage-workContainer    ------------------------*/
+    .workMainContainer{
+        margin:100px auto;
+        width:80%;
+    }
+    .Red{ font-size:2.5em !important; }  
+    .workcontent h2{
+        font-size:1.5em;
+        margin:0;
+    }
+    .workcontent p{ font-size:1em; }
+    .workcontent img{ width:70%; }
+/*--------------------    footer    ------------------------*/
+    .footerContainer{ 
+        flex-direction:column;
+        text-align:center;
+    }    
+    .contactContainer{ margin-top:10px; }
+/*--------------------   support page   ------------------------*/    
+    .contactModal{ 
+        width:70%;
+        margin:300px auto;
+    }
+    .contactModal h2{ font-size:1.5em; }
+    .contactIcons a{
+        font-size:2em;
+        padding:10px 17px;
+    }
+    .contactInfo p{ font-size:0.9em; }
+/*--------------------   privacy policy page    ------------------------*/
+    .mainContentHolder{
+        width:80%;
+        margin:145px auto;    
+    }
+    .mainContentHolder>h1{ font-size:2em; }
+    .subContent h2{ font-size:1.4em; }
+    .subContent p{ font-size:0.9em; }
+    .subContent h3{ font-size:1em; }
+/*--------------------    About Us page    ------------------------*/  
+    .AboutTopContainer{ height:330px; }
+    .AboutContainer{
+        padding-top:110px;
+    }
+    .AboutContainer h1{ font-size:2.5em; }
+    .AboutSubContainer{ flex-direction:column; }
+    .AboutSubContainer p{ font-size:1.1em; }
+    .AboutLink{ margin-top:10px; }
+    
+    .AboutContent{
+        width:90%;
+        margin:75px auto 35px;
+    }
+    .AboutInfo h2{ font-size:1.4em; }
+    .AboutInfo p{ font-size:1em; }
+    .ContributorContainer{ width:90%; }
+    .ContributorContainer>h2{ font-size:1.5em; }
+    .ContributorContainer>p{ font-size:0.9em; }
+    .ContributorInfo{ width:100%; }
+/*--------------------    Business page - top   ------------------------*/
+    .BusinessContainer img{ display:none;}
+    .BusinessContainer{
+        width:90%;
+        margin:0 auto;
+    }
+    .BusinessContainer div{ width:100%; }
+    .BusinessContainer h2{ font-size:3em; }
+    .BusinessContainer p{ 
+        margin-top:10px;
+        font-size:1.2em; 
+    }
+    .BusinessContainer div div{ margin-top:30px; }
+    .BusinessContainer div div a{ font-size:1.2em; }
+    .RetailerInfo{ width:100%; }
+    .retailContactpart>div, .contactform{ padding:50px 30px; }
+    .AppInfo{
+        width:90%;
+        margin:100px auto 50px;
+    }
+    .featureContainer{ 
+        width:90%;
+        margin:75px auto 50px;
+    }
+    .featureContainer>h2{ font-size:2.3em; }
+    .features h2{ font-size:1.6em; }
+    .features p{ font-size:1.1em; }
+/*--------------------    FAQ page      ------------------------*/
+    .faqContainer{
+        width:80%;
+        margin-top:150px;
+    }
+    .faqContainer h2{ font-size: 2.4em; }
+    .faqSubContainer{ flex-direction:column; }
+    .faqSubContainer div{ margin-top:10px; }
+    .tabs{ 
+        margin-top:50px;
+        flex-direction:column;
+    }
+    .tabs a:nth-child(1) {
+        border-radius: 5px 5px 0 0;
+    }
+    .tabs a:nth-child(6) {
+        border-radius: 0 0 5px 5px;
+    }
+    .answer{ margin-left:30px; }
+/*--------------------    Location page      ------------------------*/    
+     .locationContainer img{ transform: scale(2,1) translate(5%,0px); }
+    .sitepath{
+        left:10px;
+        right:unset;
+    }  
+    .search{
+        top:45px;
+    }
+    .search input{ height:15px; }
+    .autocomplete{ top:82px; }
+    .popup{ cursor:pointer; }
+    .mallDetail{ width: 100%; }
+    .mallDetail>a{ z-index:2; }
+ }
+ 

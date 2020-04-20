@@ -1,0 +1,25 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: "Arial", sans-serif;
+}
+.textCenter{
+    text-align:center;  
+}
+.Grey{ color:#555; }
+.Gray{ color:grey; }
+.white{color:white;}
+ul,h1,h2,h3,p{
+    margin:0;
+    padding:0;
+}
+.underline{
+    border: 1.5px solid red;
+    width:50px;
+    margin-top: 20px;
+}
+.Red{
+    color:red;
+    font-size:3em;
+}
+
