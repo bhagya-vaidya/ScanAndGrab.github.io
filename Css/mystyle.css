@@ -787,7 +787,10 @@ input[type=submit]{
     }
     .workcontent div img { width: 60%; }
 /*--------------------   support page    ------------------------*/    
-    .contactModal{ width:470px; }
+    .contactModal{ 
+        width:470px;
+        margin: 33vh auto;
+    }
 /*--------------------   privacy policy page    ------------------------*/
     .mainContentHolder{
         width:60%;
@@ -952,12 +955,14 @@ input[type=submit]{
         margin:100px auto;
         width:90%;
     }
-    .Red{ font-size:2.1em !important; }  
+    .workMainContainer h2{ font-size:2em; }
+    .Red{ font-size:1.8em !important; }  
     .workcontent h2{
-        font-size:2.1em;
+        font-size:1.7em;
         margin:0 0 5px;
     }
-    .workcontent div p{ line-height:1.3; }
+    .workcontent div p{ font-size:1em; }
+    .workcontent div img { width: 80%; }
     /*.workcontent img{ width:70%; } */
 /*--------------------    footer    ------------------------*/
     .footerContainer{ 
@@ -969,7 +974,7 @@ input[type=submit]{
 /*--------------------   support page   ------------------------*/    
     .contactModal{ 
         width:70%;
-        margin:300px auto;
+        margin:33vh auto;
     }
     .contactModal h2{ font-size:1.5em; }
     .contactIcons a{
@@ -1075,7 +1080,7 @@ input[type=submit]{
     .autocomplete{ top:82px; }
     .popup{ cursor:pointer; }
     .mallDetail{ width: 100%; }
-    .mallDetail img { height: 300px; }
+    .mallDetail img { height: 270px; }
     .mallDetail>a{ z-index:2; }
  }
  

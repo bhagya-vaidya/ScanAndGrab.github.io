@@ -189,9 +189,9 @@ function showMallDetail(mallname,mallboxid,popupid){
     if(window.innerWidth <= 580){
         document.getElementById(mallboxid).style="display:none";
         if(mallname=="Big Bazar, Bharuch"){
-            document.getElementById("map").style="transform: scale(2, 1.2) translate(4%, 50px);transition: all 0.3s linear 0s;"; 
+            document.getElementById("map").style="transform: scale(2, 1.2) translate(4%, 40px);transition: all 0.3s linear 0s;"; 
             document.getElementById(popupid).innerText=mallname;
-            document.getElementById(popupid).style= "display:block;top:106px;left:45%;transition: display 5s linear";
+            document.getElementById(popupid).style= "display:block;top:95px;left:45%;transition: display 5s linear";
             document.getElementById(popupid).onclick=function(){
                 document.getElementById(mallboxid).style="display:block";
                 document.getElementById(popupid).style= "display:none;";
@@ -219,7 +219,7 @@ function showMallDetail(mallname,mallboxid,popupid){
             } 
         }
         else if(mallname=="Hind Shopping Center, Bharuch"){
-            document.getElementById("map").style="transform: scale(1.2, 1.2) translate(40px, 50px);transition: all 0.3s linear 0s;"; 
+            document.getElementById("map").style="transform: scale(1.2, 1.2) translate(25px, 50px);transition: all 0.3s linear 0s;"; 
             document.getElementById(popupid).innerText=mallname;
             document.getElementById(popupid).style= "display:block;top:93px;left:57%;transition: display 5s linear;"; 
             document.getElementById(popupid).onclick=function(){
