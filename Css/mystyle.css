@@ -120,7 +120,7 @@
     margin:150px auto   ;
 }
 .workMainContainer h2{
-    font-size: 2.2em;
+    font-size: 2.3em;
     text-transform: uppercase;
 }
 .workContainer{
@@ -130,28 +130,33 @@
     justify-content:space-between;
 }
 .workMainContent{
-    width:350px;
+    width:30%;
     display:flex;
     justify-content:space-between;
 }
 .workcontent{
     width:80%;
     display:flex;
-    flex-direction:column;
-    justify-content:space-between;
+    flex-direction:column; 
 }
 .workcontent h2{
     text-align: left; 
-    margin: 10px 0;
+    margin-bottom:10px;
 }
-.workcontent p{
+.workcontent div{
+    display:flex;
+    height:100%;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.workcontent div p{
     text-align:justify;
     font-size: 1.1em;
     line-height: 1.5;
     color: gray;
-    margin: 10px 0;
+    margin-bottom:10px;
 }
-.workcontent img{
+.workcontent div img{
     width:80%;
     margin: 10px auto 0;
 }
@@ -332,7 +337,7 @@
 .BusinessContainer div a{
     color:white;
     text-decoration: none;
-    font-size: 1.4vw;
+    font-size: 1.1em;
 }
 /*--------------------    Business page - what is S & G   ------------------------*/
 .AppInfo , .featureContainer{
@@ -386,7 +391,10 @@
     line-height: 1.2;
     font-size: 1.1em;
 }
-.retailContactpart>div table{ margin:30px 0 0 10px; }
+.retailContactpart>div table{ 
+    margin:30px 0 0 10px;
+    color: #635f5f;
+}
 .retailContactpart i{ color:red; }
 .contactform{
     width:400px;
@@ -494,6 +502,7 @@ input[type=submit]{
 /*--------------------    FAQ page      ------------------------*/
 .faqContainer{
     width:800px;
+    min-height:60vh;
     margin: 190px auto 100px;
 }
 .faqContainer h2{
@@ -559,7 +568,7 @@ input[type=submit]{
     overflow:hidden;
     position: relative;
     margin-top: 90px;
-    height: 650px;
+    height: 100vh;
 }
 .locationContainer img{
     width: 100%;
@@ -776,6 +785,7 @@ input[type=submit]{
         width:100%;
         margin:60px auto;
     }
+    .workcontent div img { width: 60%; }
 /*--------------------   support page    ------------------------*/    
     .contactModal{ width:470px; }
 /*--------------------   privacy policy page    ------------------------*/
@@ -784,7 +794,6 @@ input[type=submit]{
         margin: 170px auto 100px 75px;    
     }
 /*--------------------    About Us page    ------------------------*/ 
-    .AboutTopContainer, .BusinessTopContainer{ margin-top:70px; }
     .AboutSubContainer p{ font-size:1.2em; }
     .AboutLink a{ font-size:0.9em;}
 /*--------------------    About Us page-content    ------------------------*/
@@ -816,12 +825,12 @@ input[type=submit]{
     }
     .BusinessContainer{ width:90%; }  
     .BusinessContainer div{ width:43%; }
-    .BusinessContainer h2{ font-size:3em; }
-    .BusinessContainer p{ 
-        font-size:1.2em;
-        margin-top:0;
+    .BusinessContainer h2{ font-size:2.5em; }
+    .BusinessContainer p{ font-size:1.1em; }
+    .BusinessContainer div div{ 
+        margin-top:10px;
+        width:100%;
     }
-    .BusinessContainer div div{ margin-top:10px; }
     .BusinessContainer div div a{ font-size:1.1em; }
     .RetailerInfo{
         width:500px;
@@ -882,24 +891,18 @@ input[type=submit]{
     
 /*--------------------    FAQ page      ------------------------*/
     .faqContainer{
-        width:520px;
+        width:550px;
         margin-top:170px;
-    }
-    .faqContainer h2{ font-size: 2.4em; }
-    .faqSubContainer{ font-size: 1.1em; }
+    }  
     .tabs{ margin-top:70px;}
-    .tabs a{ 
-        padding:7px;
-        font-size: 1.1em;
-    } 
+    .tabs a{ padding:7px; } 
     .questionans a{ 
-        font-size:1.09em;
+        font-size:1.15em;
         font-weight:570;
         display:flex;
     }
-    .answer{ font-size:0.9em; } 
-/*--------------------    location Page    ------------------------*/
-    .locationContainer{ margin-top:70px; } 
+    .answer{ font-size:1.05em; } 
+/*--------------------    location Page    ------------------------*/ 
     .sitepath{
         font-size:0.9em;
         padding:7px;
@@ -934,7 +937,9 @@ input[type=submit]{
 
  @media screen and (max-width:580px){
 /*--------------------    menu    ------------------------*/ 
-    .logo,#threebar{ font-size:2.2em; }    
+    .menu{ height: 70px; }
+    .logo,#threebar{ font-size:2.1em; }  
+    #menulist{ top:71px; }  
 /*--------------------    homepage-headercontent    ------------------------*/
     .topContent{ height:500px}
     .headerContent{ padding:40% 0 0;}
@@ -947,21 +952,17 @@ input[type=submit]{
         margin:100px auto;
         width:90%;
     }
-    .Red{ font-size:2.3em !important; }  
+    .Red{ font-size:2.1em !important; }  
     .workcontent h2{
-        font-size:2em;
-        margin:0;
+        font-size:2.1em;
+        margin:0 0 5px;
     }
-    .workcontent p{ 
-        font-size:1.4em;
-        line-height:1.3; 
-    }
+    .workcontent div p{ line-height:1.3; }
     /*.workcontent img{ width:70%; } */
 /*--------------------    footer    ------------------------*/
     .footerContainer{ 
         flex-direction:column;
         text-align:center;
-        font-size: 1.2em;
     }    
     .contactContainer{ margin-top:10px; }
     .contactDetails p { margin-right: 0px; }
@@ -986,7 +987,10 @@ input[type=submit]{
     .subContent p{ font-size:0.9em; }
     .subContent h3{ font-size:1em; }
 /*--------------------    About Us page    ------------------------*/  
-    .AboutTopContainer{ height:330px; }
+    .AboutTopContainer{ 
+        height:330px;
+        margin-top:70px;
+    }
     .AboutContainer{
         padding-top:110px;
     }
@@ -1006,6 +1010,7 @@ input[type=submit]{
     .ContributorContainer>p{ font-size:0.9em; }
     .ContributorInfo{ width:100%; }
 /*--------------------    Business page - top   ------------------------*/
+    .BusinessTopContainer{ margin-top:70px; }
     .BusinessContainer img{ display:none;}
     .BusinessContainer{
         width:90%;
@@ -1039,11 +1044,16 @@ input[type=submit]{
     }
     .faqContainer h2{ font-size: 2.4em; }
     .faqSubContainer{ flex-direction:column; }
-    .faqSubContainer div{ margin-top:10px; }
+    .faqSubContainer p{ font-size:0.9em; }
+    .faqSubContainer div{ 
+        margin-top:10px;
+        font-size:0.9em;
+    }
     .tabs{ 
         margin-top:50px;
         flex-direction:column;
     }
+    .tabs a{ font-size:1.1em; }
     .tabs a:nth-child(1) {
         border-radius: 5px 5px 0 0;
     }
@@ -1051,8 +1061,9 @@ input[type=submit]{
         border-radius: 0 0 5px 5px;
     }
     .answer{ margin-left:30px; }
-/*--------------------    Location page      ------------------------*/    
-     .locationContainer img{ transform: scale(2,1) translate(5%,0px); }
+/*--------------------    Location page      ------------------------*/
+    .locationContainer{ margin-top:70px; }    
+    .locationContainer img{ transform: scale(2,1) translate(5%,0px); }
     .sitepath{
         left:10px;
         right:unset;
@@ -1064,6 +1075,7 @@ input[type=submit]{
     .autocomplete{ top:82px; }
     .popup{ cursor:pointer; }
     .mallDetail{ width: 100%; }
+    .mallDetail img { height: 300px; }
     .mallDetail>a{ z-index:2; }
  }
  
