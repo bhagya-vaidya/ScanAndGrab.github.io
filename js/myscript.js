@@ -191,6 +191,7 @@ function showMallDetail(mallname,mallboxid,popupid){
         if(mallname=="Big Bazar, Bharuch"){
             document.getElementById("map").style="transform: scale(2, 1.2) translate(4%, 40px);transition: all 0.3s linear 0s;"; 
             document.getElementById(popupid).innerText=mallname;
+            document.getElementById("searchmall").setAttribute('readonly',true);
             document.getElementById(popupid).style= "display:block;top:95px;left:45%;transition: display 5s linear";
             document.getElementById(popupid).onclick=function(){
                 document.getElementById(mallboxid).style="display:block";
@@ -201,6 +202,7 @@ function showMallDetail(mallname,mallboxid,popupid){
         else if(mallname=="D Mart, Ankleshwar"){
             document.getElementById("map").style="transform:scale(1.2, 1.2) translate(-20px,30px);transition: all 0.3s linear 0s;"; 
             document.getElementById(popupid).innerText=mallname;
+            document.getElementById("searchmall").setAttribute('readonly',true);
             document.getElementById(popupid).style= "display:block;bottom:119px;left:64%;transition: display 5s linear;"; 
             document.getElementById(popupid).onclick=function(){
                 document.getElementById(mallboxid).style="display:block";
@@ -211,6 +213,7 @@ function showMallDetail(mallname,mallboxid,popupid){
         else if(mallname=="Golden Square,Ankleshwar"){
             document.getElementById("map").style="transform:scale(1.2, 1.3) translate(-20px,-60px);transition: all 0.3s linear 0s;"; 
             document.getElementById(popupid).innerText=mallname;
+            document.getElementById("searchmall").setAttribute('readonly',true);
             document.getElementById(popupid).style= "display:block;bottom:56px;left:59%;transition: display 5s linear;";
             document.getElementById(popupid).onclick=function(){
                 document.getElementById(mallboxid).style="display:block";
@@ -221,6 +224,7 @@ function showMallDetail(mallname,mallboxid,popupid){
         else if(mallname=="Hind Shopping Center, Bharuch"){
             document.getElementById("map").style="transform: scale(1.2, 1.2) translate(25px, 50px);transition: all 0.3s linear 0s;"; 
             document.getElementById(popupid).innerText=mallname;
+            document.getElementById("searchmall").setAttribute('readonly',true);
             document.getElementById(popupid).style= "display:block;top:93px;left:57%;transition: display 5s linear;"; 
             document.getElementById(popupid).onclick=function(){
                 document.getElementById(mallboxid).style="display:block";
@@ -231,6 +235,7 @@ function showMallDetail(mallname,mallboxid,popupid){
         else if(mallname=="Silver Plaza Shopping, Ankleshwar"){
             document.getElementById("map").style="transform: scale(1.2, 1.4) translate(-20px, -90px);transition: all 0.3s linear 0s;"; 
             document.getElementById(popupid).innerText=mallname;
+            document.getElementById("searchmall").setAttribute('readonly',true);
             document.getElementById(popupid).style= "display:block;bottom:130px;left:58%;transition: display 5s linear;";
             document.getElementById(popupid).onclick=function(){
                 document.getElementById(mallboxid).style="display:block";
