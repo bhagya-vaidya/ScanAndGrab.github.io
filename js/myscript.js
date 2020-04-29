@@ -314,7 +314,8 @@ function contactvalidate(){
         document.getElementById("invalidmessage").style.display = "block";
         document.contactform.message.focus() ;
         return false;    
-   }    
+   }   
+ alert("Thanks for contacting us. We will get back to you soon.");
    return true;
 }
 
